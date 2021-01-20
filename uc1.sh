@@ -24,6 +24,8 @@ do
 done
 # print array
 echo "${array[@]}"
+
 # desending order
 a=`printf '%s\n' "${array[@]}" | sort -nr`
 echo $a
+
