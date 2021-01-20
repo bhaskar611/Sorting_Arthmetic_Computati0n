@@ -28,4 +28,7 @@ echo "${array[@]}"
 # desending order
 a=`printf '%s\n' "${array[@]}" | sort -nr`
 echo $a
+# Ascending order
+b=`printf '%s\n' "${array[@]}" | sort -n`
+echo $b
 
