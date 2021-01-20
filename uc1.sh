@@ -17,3 +17,10 @@ dict[result1]=$result1
 dict[result2]=$result2
 dict[result3]=$result3
 dict[result4]=$result4
+# Read dictionary value in to a array
+for((i=0; i<=${#dict[@]}; i++))
+do
+  array[i]=${dict[result$((i+1))]}
+done
+# print array
+echo "${array[@]}"
